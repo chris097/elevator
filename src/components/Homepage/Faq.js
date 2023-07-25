@@ -41,24 +41,40 @@ const Faq = () => {
                   setShowFaq(!showFaq)
                   setActiveTag(faq.tag)
                 }} className="border-t last:border-b w-full h-[87px] cursor-pointer items-center flex justify-between">
-                  <p className={`lg:text-xl text-base font-semibold ${activeTag === index+1 && showFaq === true ? "text-primarypink" : "text-black"}`}>{faq.title}</p>
-                  <span>{activeTag === index+1 && showFaq === true ? <MinusIcon /> : <PlusIcon />}</span>
+                  <p className={`lg:text-xl text-base font-semibold ${activeTag === index + 1 && showFaq === true ? "text-primarypink" : "text-black"}`}>{faq.title}</p>
+                  <span>{activeTag === index + 1 && showFaq === true ? <MinusIcon /> : <PlusIcon />}</span>
                 </div>
-                {(showFaq && activeTag === index+1) && <p className="lg:text-base text-sm pb-6">{faq.description}</p>}
+                {(showFaq && activeTag === index + 1) && <p className="lg:text-base text-sm pb-6">{faq.description}</p>}
               </React.Fragment>
             ))}
           </div>
         </div>
       </div>
       <div className='grid lg:grid-cols-3 grid-cols-1 text-white'>
-        {represents.map((reps, index) => (
-         <div key={index} className='bg-black even:bg-primarypink h-[301px]'>
-          <div className='flex flex-col justify-center items-center h-full'>
-              <h2 className='text-[36px] font-bold uppercase'>{reps.title}</h2>
-              <p className='text-center px-10 mt-4 text-base'>{reps.description}</p>
-          </div>
-        </div>
-       ))}
+          <Reveal>
+            <div className='bg-black text-white h-[301px]'>
+              <div className='flex flex-col justify-center items-center h-full'>
+                <h2 className='text-[36px] font-bold uppercase'>We represent</h2>
+                <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className='bg-primarypink text-white h-[301px]'>
+              <div className='flex flex-col justify-center items-center h-full'>
+                <h2 className='text-[36px] font-bold uppercase'>We distribute</h2>
+                <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className='bg-black text-white h-[301px]'>
+              <div className='flex flex-col justify-center items-center h-full'>
+                <h2 className='text-[36px] font-bold uppercase'>We’re associated</h2>
+                <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
+              </div>
+            </div>
+          </Reveal>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import technical1 from '@/public/image/technical1.png';
 import technical2 from '@/public/image/technical2.png';
 import Linkedin from '@/public/svg/Linkedin';
+import Reveal from '../utils/Reveal';
 
 const teams = [
     {url: technical1, name: "Helen Chai", role: "Head of Construction"},
@@ -12,12 +13,12 @@ const teams = [
 
 const TechnicalTeam = () => {
     return (
-        <div className='bg-white lg:pt-20 pt-10 pb-32 overflow-x-hidden'>
+        <div className='bg-white pt-10 pb-32 overflow-x-hidden'>
             <div className='w-[90%] mx-auto relative'>
-                <p className='text-center lg:text-[52px] text-[38px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p>
-                <div className='flex lg:justify-between lg:gap-10 gap-6 w-[1200px]'>
+                <Reveal><p className='text-center lg:text-[52px] text-[38px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
+                <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'>
                     {teams.map((team, index) => (
-                        <div key={index} className='bg-white shadow p-6 border-[0.5px] w-[300px] rounded-md border-[#f5f5f5]'>
+                        <div key={index} className='bg-white shadow p-6 border-[0.5px] lg:w-full w-[300px] rounded-md border-[#f5f5f5]'>
                             <Image className='w-full lg:h-[328.33px] h-[250px]' src={technical1} alt="elevator technical team" />
                             <div className='flex justify-between pt-6 items-center'>
                                 <div>

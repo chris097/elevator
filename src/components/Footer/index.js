@@ -12,7 +12,9 @@ const Footer = () => {
       <div className='bg-black lg:h-[600px] h-auto mt-52'>
           <div className='lg:flex block justify-between text-white w-[90%] mx-auto pt-14'>
               <div>
-                  <Logo />
+                  <div className='w-[100px]'>
+                    <Logo />
+                  </div>
                   <div className='mt-6'>
                       <p className='text-xl font-semibold'>Customers care service</p>
                       <div className='flex gap-2 mt-4 items-center'> 

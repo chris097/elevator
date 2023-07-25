@@ -12,9 +12,9 @@ const HeroSection = () => {
             </div>
             <div className='relative text-white z-40 flex flex-col w-[90%] justify-center mx-auto h-full'>
                 <Reveal>
-                    <div className='lg:mt-32 py-20 lg:py-0'>
-                    <p className='lg:text-xl text-base font-semibold'>WELCOME TO ELEVATOR</p>
-                    <h1 className='lg:w-[60%] w-full lg:text-[72px] text-[30px] mt-8 font-bold lg:leading-[90px] leading-normal'>WE’RE PROVIDING INDUSTRY LEADING SOLUTION</h1>
+                    <div className='lg:mt-32 pt-20 pb-32 lg:py-0'>
+                    <p className='text-xl font-semibold'>WELCOME TO ELEVATOR</p>
+                    <h1 className='lg:w-[60%] w-full lg:text-[72px] text-[48px] mt-8 font-bold lg:leading-[90px] leading-normal'>WE’RE PROVIDING INDUSTRY LEADING SOLUTION</h1>
                     <p className='lg:w-[40%] w-full text-lg mt-3'>
                         Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.
                     </p>

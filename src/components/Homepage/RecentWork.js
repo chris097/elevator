@@ -3,20 +3,21 @@ import Image from 'next/image';
 import recent1 from "@/public/image/recent1.png"
 import recent2 from "@/public/image/recent2.png"
 import recent3 from "@/public/image/recent3.png"
+import Reveal from '../utils/Reveal';
 
 const RecentWork = () => {
     return (
         <div className='bg-white overflow-x-hidden'>
             <div className='w-[90%] mx-auto pt-24'>
-                <div className='lg:text-[52px] text-[36px] font-semibold'>OUR RECENT WORK</div>
-                <div className='flex lg:justify-between gap-6 mt-10 w-[1200px]'>
-                    <div className='w-[300px] lg:h-[289px] h-[200px]'>
+                <Reveal><p className='lg:text-[52px] text-[36px] font-semibold'>OUR RECENT WORK</p></Reveal>
+                <div className='flex lg:justify-between gap-6 mt-10 lg:w-full w-[1200px]'>
+                    <div className='lg:w-full w-[300px] lg:h-[289px] h-[200px]'>
                         <Image className='w-full h-full' src={recent1} alt='elevator recent pic' />
                     </div>
-                    <div className='lg:h-[289px] h-[200px] w-[300px]'>
+                    <div className='lg:h-[289px] h-[200px] lg:w-full w-[300px]'>
                         <Image className='w-full h-full' src={recent2} alt='elevator recent pic' />
                     </div>
-                    <div className='lg:h-[289px] h-[200px] w-[300px]'>
+                    <div className='lg:h-[289px] h-[200px] lg:w-full w-[300px]'>
                         <Image className='w-full h-full' src={recent3} alt='elevator recent pic' />
                     </div>
                 </div>

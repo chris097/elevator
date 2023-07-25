@@ -1,6 +1,7 @@
 import React from 'react';
 import result from "@/public/image/result.png";
 import Image from 'next/image';
+import Reveal from '../utils/Reveal';
 
 const results = [
     {number: "3526+", title: "Tons Of Customers"},
@@ -18,12 +19,13 @@ const Result = () => {
                 <Image className="w-full h-[800px] image-container" src={result} alt="elevator result" />
             </div>
             <div className='text-white z-40 absolute top-0 px-10 pt-20'>
-                <p className='text-[22px] text-primarypink'>LATEST PROJECTS</p>
-                <p className='lg:text-[52px] text-[36px] font-semibold text-white lg:w-1/2 mt-5'>EXCELLENCE DRIVEN FOR GETTING UNRIVALED RESULTS.</p>
+                <Reveal><p className='text-[22px] text-primarypink'>LATEST PROJECTS</p></Reveal>
+                <Reveal><p className='lg:text-[52px] text-[38px] font-semibold text-white lg:w-1/2 mt-5'>EXCELLENCE DRIVEN FOR GETTING UNRIVALED RESULTS.</p></Reveal>
                     <div className='grid lg:grid-cols-4 grid-cols-2 mt-10 gap-6'>
                 {results.map((result, index) => (
-                    <div key={index} className='bg-primarypink rounded-md lg:h-[280px] lg:py-0 py-4 h-auto gap-1 flex justify-center flex-col items-center'>
-                        <svg width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                    <Reveal>
+                        <div key={index} className='bg-primarypink rounded-md lg:h-[280px] lg:py-0 py-4 h-auto gap-1 flex justify-center flex-col items-center'>
+                        <svg className='lg:w-[80px] lg:h-[80px] w-[40px] h-[40px]' viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <ellipse cx="38.875" cy="40" rx="38.875" ry="40" fill="#FFFFF1" />
                             <rect x="21.3813" y="20" width="34.9875" height="40" fill="url(#pattern0)" />
                             <defs>
@@ -36,6 +38,7 @@ const Result = () => {
                             <p className='text-white text-[40px] mt-1.5'>{result.number}</p>
                             <p className='text-xl text-white'>{result.title}</p>
                     </div>
+                    </Reveal>
                 ))}
                 </div>
             </div>

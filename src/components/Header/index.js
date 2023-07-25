@@ -31,12 +31,12 @@ const Header = () => {
                 <div className='w-[90%] mx-auto text-white flex justify-between items-center h-full'>
                     <div className='flex items-center gap-28'>
                         <Logo />
-                        <div className='lg:flex items-center gap-16 hidden'>
+                        <div className='lg:flex items-center whitespace-nowrap gap-16 hidden'>
                             <Link href="/" className='cursor-pointer'>Home</Link>
                             <Link href="/about-us" className='cursor-pointer'>About Us</Link>
                             <Link href="/our-service" className='cursor-pointer'>Our Service</Link>
                             <Link href="/contact-us" className='cursor-pointer'>Contact US</Link>
-                            <Link href="/" className='cursor-pointer'>Home</Link>
+                            {/* <Link href="/" className='cursor-pointer'>Home</Link> */}
                         </div>
                     </div>
                     <div>Navbar</div>
