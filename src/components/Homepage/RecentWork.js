@@ -9,7 +9,7 @@ const RecentWork = () => {
     return (
         <div className='bg-white overflow-x-hidden'>
             <div className='w-[90%] mx-auto pt-24'>
-                <Reveal><p className='lg:text-[52px] text-[36px] font-semibold'>OUR RECENT WORK</p></Reveal>
+                <Reveal><p className='lg:text-[52px] text-[32px] font-semibold'>OUR RECENT WORK</p></Reveal>
                 <div className='flex lg:justify-between gap-6 mt-10 lg:w-full w-[1200px]'>
                     <div className='lg:w-full w-[300px] lg:h-[289px] h-[200px]'>
                         <Image className='w-full h-full' src={recent1} alt='elevator recent pic' />

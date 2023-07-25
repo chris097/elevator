@@ -29,7 +29,7 @@ const Faq = () => {
   return (
     <div className='pt-20 bg-white'>
       <Reveal>
-        <div className='text-center'><span className='lg:text-[32px] text-2xl font-bold'>WE MAY HAVE THE <span className='text-primarypink'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] text-[40px] font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
+        <div className='text-center w-[90%] mx-auto'><span className='lg:text-[32px] text-lg font-bold'>WE MAY HAVE THE <span className='text-primarypink'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] text-[28px] font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
       </Reveal>
       <div className='mt-14 lg:w-full w-[90%] mx-auto'>
         <div className='flex gap-10'>
@@ -41,7 +41,7 @@ const Faq = () => {
                   setShowFaq(!showFaq)
                   setActiveTag(faq.tag)
                 }} className="border-t last:border-b w-full h-[87px] cursor-pointer items-center flex justify-between">
-                  <p className={`lg:text-xl text-base font-semibold ${activeTag === index + 1 && showFaq === true ? "text-primarypink" : "text-black"}`}>{faq.title}</p>
+                  <p className={`lg:text-xl text-base font-semibold w-[80%] ${activeTag === index + 1 && showFaq === true ? "text-primarypink" : "text-black"}`}>{faq.title}</p>
                   <span>{activeTag === index + 1 && showFaq === true ? <MinusIcon /> : <PlusIcon />}</span>
                 </div>
                 {(showFaq && activeTag === index + 1) && <p className="lg:text-base text-sm pb-6">{faq.description}</p>}

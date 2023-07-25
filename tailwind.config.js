@@ -13,6 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
+        'primarywhite': "#FEFEFE",
         'primarypink': "#FF6600",
         'primaryyellow': "#FFFFF1",
         'primaryblack': "#0C0A0A",

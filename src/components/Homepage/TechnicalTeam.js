@@ -15,15 +15,15 @@ const TechnicalTeam = () => {
     return (
         <div className='bg-white pt-10 pb-32 overflow-x-hidden'>
             <div className='w-[90%] mx-auto relative'>
-                <Reveal><p className='text-center lg:text-[52px] text-[38px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
+                <Reveal><p className='lg:text-center lg:text-[52px] text-[32px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
                 <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'>
                     {teams.map((team, index) => (
                         <div key={index} className='bg-white shadow p-6 border-[0.5px] lg:w-full w-[300px] rounded-md border-[#f5f5f5]'>
-                            <Image className='w-full lg:h-[328.33px] h-[250px]' src={technical1} alt="elevator technical team" />
+                            <Image className='w-full lg:h-[328.33px] h-[240px]' src={technical1} alt="elevator technical team" />
                             <div className='flex justify-between pt-6 items-center'>
                                 <div>
-                                    <p className='text-secondaryblack text-[32px] font-semibold'>{team.name}</p>
-                                    <p className='text-lg text-[#6E777D] font-semibold'>{team.role}</p>
+                                    <p className='text-secondaryblack lg:text-[32px] text-xl font-semibold'>{team.name}</p>
+                                    <p className='lg:text-lg text-sm text-[#6E777D] font-semibold'>{team.role}</p>
                                 </div>
                                 <Linkedin />
                             </div>

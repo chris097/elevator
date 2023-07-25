@@ -12,7 +12,7 @@ const Reveal = ({ children }) => {
         if (isInView) {
             mainContainer.start("visible")
         }
-    }, [isInView, mainContainer]);
+    }, [isInView]);
 
   return (
       <div ref={ref} className='relative overflow-hidden'>

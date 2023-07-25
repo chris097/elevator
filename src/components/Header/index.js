@@ -1,29 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import EmailIcon from '@/public/svg/EmailIcon';
 import PhoneIcon from '@/public/svg/PhoneIcon';
 import ClockIcon from '@/public/svg/ClockIcon';
 import Logo from '@/public/svg/Logo';
 import Link from 'next/link';
+import Navbar from '../modal/Navbar';
 
 
 const Header = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleClick = () => {
+        setShowMenu(true);
+    }
+
     return (
         <div>
+            {showMenu && <Navbar setShowMenu={setShowMenu} />}
             <div className='bg-white'>
                 <div className='w-[90%] mx-auto md:flex hidden justify-between items-center h-[52px]'>
-                    <div className='flex gap-10'>
-                        <div className='flex items-center gap-2'>
+                    <div className='flex lg:gap-10 gap-6'>
+                        <div className='flex items-center gap-1'>
                             <PhoneIcon />
-                            <span>+23470153683</span>
+                            <span className='text-xs font-bold'>+23470153683</span>
                         </div>
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-1'>
                             <EmailIcon />
-                            <span>elevator@gmail.com</span>
+                            <span className='text-xs font-bold'>elevator@gmail.com</span>
                         </div>
                     </div>
                     <div className='flex gap-2 items-center'>
                         <ClockIcon />
-                        <span>Mon - Sat 9:00AM - 6:00PM, Sunday - Closed</span>
+                        <span className='text-xs font-bold'>Mon - Sat 9:00AM - 6:00PM, Sunday - Closed</span>
                     </div>
                 </div>
             </div>
@@ -39,7 +48,7 @@ const Header = () => {
                             {/* <Link href="/" className='cursor-pointer'>Home</Link> */}
                         </div>
                     </div>
-                    <div>Navbar</div>
+                    <div onClick={handleClick}>Navbar</div>
                 </div>
             </div>
         </div>
