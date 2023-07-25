@@ -17,11 +17,25 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #F2F3F5;
+} 
+
+.image-container {
+    /* Apply the grayscale filter */
+    filter: grayscale(100%);
+    /* For older browser support */
+    -webkit-filter: grayscale(100%);
+};
+
+.container {
+  /* Set the initial state of the container */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.container.show {
+  /* Set the final state of the container when scrolled into view */
+  opacity: 1;
+  transform: translateY(0);
 }
