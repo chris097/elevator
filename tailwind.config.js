@@ -18,9 +18,13 @@ module.exports = {
         'primaryyellow': "#FFFFF1",
         'primaryblack': "#0C0A0A",
         'secondaryblack': "#1A1A1A",
+        'primarygray': "#F2F3F5",
       },
       screens: {
         sm: "540px"
+      },
+      fontFamily: {
+        tillitium: ["Titillium Web, sans-serif"]
       }
     },
   },

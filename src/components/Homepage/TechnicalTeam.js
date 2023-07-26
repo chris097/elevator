@@ -17,10 +17,11 @@ const TechnicalTeam = () => {
     return (
         <div className='bg-white pt-10 pb-32 overflow-x-hidden'>
             <div className='w-[90%] mx-auto relative'>
-                <Reveal><p className='lg:text-center lg:text-[52px] text-[32px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
-                <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'>
+                <Reveal><p className='lg:text-center lg:text-[40px] font-tillitium  text-[32px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
+                {/* <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'> */}
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
                     {teams.map((team, index) => (
-                        <div className='bg-white shadow p-6 border-[0.5px] lg:w-full w-[300px] rounded-md border-[#f5f5f5]' key={index}>
+                        <div className='bg-white shadow p-6 border-[0.5px] w-full  rounded-md border-[#f5f5f5]' key={index}>
                             <Reveal>
                             <div>
                             <Image className='w-full lg:h-[328.33px] h-[240px]' src={technical1} alt="elevator technical team" />

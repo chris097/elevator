@@ -13,20 +13,21 @@ const services = [
 
 const Service = () => {
   return (
-      <div className='py-24 mx-auto w-[90%]'>
-          <Reveal><p className='lg:text-[48px] sm:text-[38px] text-[32px] font-semibold'>QUALITY SERVICING OPPORTUNITY</p></Reveal>
+      <div className='py-16 mx-auto w-[90%]'>
+          <Reveal><p className='text-xl font-tillitium text-primarypink text-center font-semibold'>OUR SERVICES</p></Reveal>
+          <Reveal><p className='lg:text-[40px] font-tillitium text-primaryblack text-center sm:text-[38px] text-[32px] font-bold'>QUALITY SERVICING OPPORTUNITY</p></Reveal>
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-3 lg:gap-5 gap-5 mt-14'>
               {services.map((service, index) => (
                   <Reveal key={index}>
-                      <div className='flex-1 bg-primaryyellow shadow-sm rounded-md'>
+                      <div className='flex-1 bg-white shadow-sm rounded-md'>
                   <div className='relative lg:h-[360px] sm:h-[200px] h-[250px]'>
                      <Image className='w-full h-full' src={service.url} alt='elevator service pics' />
                           <div className='absolute bottom-0 z-50 text-white right-0 bg-primarypink text-2xl font-bold px-5 py-3'>0{index+1}</div>
                   </div>
-                  <div className='px-6 pt-6'>
-                          <p className='lg:text-[28px] text-xl sm:text-base font-bold text-primaryblack'>{service.title}</p>
+                  <div className='px-6 pt-6 font-tillitium'>
+                          <p className='lg:text-2xl text-xl sm:text-base font-bold text-primaryblack'>{service.title}</p>
                           <p className='lg:text-lg sm:text-sm text-base mt-4 text-secondaryblack'>{service.description}</p>
-                      <button className='w-full lg:h-[64px] h-[48px] bg-black text-white rounded lg:text-xl text-base my-6'>Learn More</button>
+                      <button className='w-1/2 lg:h-[55px] h-[48px] bg-primarypink text-white rounded lg:text-lg font-semibold text-base my-6'>View Service</button>
                   </div>
               </div>
                   </Reveal>

@@ -22,11 +22,11 @@ const Header = () => {
                 <div className='w-[90%] mx-auto md:flex hidden justify-between items-center h-[52px]'>
                     <div className='flex lg:gap-10 gap-6'>
                         <div className='flex items-center gap-1'>
-                            <PhoneIcon />
+                            <PhoneIcon fillColor="#FF6600" width="10px" height="10.5px"  />
                             <span className='text-xs font-bold'>+23470153683</span>
                         </div>
                         <div className='flex items-center gap-1'>
-                            <EmailIcon />
+                            <EmailIcon fillColor="#FF6600" width="10px" height="10.5px"  />
                             <span className='text-xs font-bold'>elevator@gmail.com</span>
                         </div>
                     </div>

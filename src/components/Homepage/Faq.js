@@ -29,7 +29,7 @@ const Faq = () => {
   return (
     <div className='pt-20 bg-white'>
       <Reveal>
-        <div className='text-center w-[90%] leading-loose mx-auto'><span className='lg:text-[32px] text-2xl font-bold'>WE MAY HAVE THE <span className='text-primarypink leading-loose'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] sm:text-4xl text-2xl font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
+        <div className='text-center w-[90%] leading-loose mx-auto'><span className='lg:text-[32px] sm:text-2xl text-lg font-bold'>WE MAY HAVE THE <span className='text-primarypink leading-loose'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] sm:text-4xl text-3xl font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
       </Reveal>
       <div className='mt-14 lg:w-full w-[90%] mx-auto'>
         <div className='flex gap-10'>

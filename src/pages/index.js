@@ -23,12 +23,12 @@ export default function Home() {
       <div className='relative lg:h-[716px] h-auto'>
         <HeroSection />
       </div>
-      <Faq />
       <Service />
+      <AboutUs />
+      {/* <Faq /> */}
       <RecentWork />
       <TechnicalTeam />
       <Result />
-      <AboutUs />
       <Footer />
     </main>
   )
