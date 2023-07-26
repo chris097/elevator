@@ -17,7 +17,8 @@ const TechnicalTeam = () => {
     return (
         <div className='bg-white pt-10 pb-32 overflow-x-hidden'>
             <div className='w-[90%] mx-auto relative'>
-                <Reveal><p className='lg:text-center lg:text-[40px] font-tillitium  text-[32px] font-semibold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
+                <Reveal><p className='lg:text-center text-lg font-tillitium text-primarypink font-semibold'>OUR TECHNICAL</p></Reveal>
+                <Reveal><p className='lg:text-center lg:text-[40px] font-tillitium text-primaryblack text-[32px] font-bold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
                 {/* <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'> */}
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
                     {teams.map((team, index) => (
