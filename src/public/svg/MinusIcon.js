@@ -3,7 +3,7 @@ import React from 'react'
 const MinusIcon = () => {
     return (
         <div>
-            <svg width="15" height="4" viewBox="0 0 15 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="13" height="3" viewBox="0 0 15 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.59814 2.44092H13.0312" stroke="#FF6600" stroke-width="3" stroke-linecap="round" />
             </svg>
         </div>

@@ -29,7 +29,7 @@ const Faq = () => {
   return (
     <div className='pt-20 bg-white'>
       <Reveal>
-        <div className='text-center w-[90%] mx-auto'><span className='lg:text-[32px] text-lg font-bold'>WE MAY HAVE THE <span className='text-primarypink'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] text-[28px] font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
+        <div className='text-center w-[90%] leading-loose mx-auto'><span className='lg:text-[32px] text-2xl font-bold'>WE MAY HAVE THE <span className='text-primarypink leading-loose'>SOLUTION</span> TO </span> <br /> <span className='lg:text-[64px] sm:text-4xl text-2xl font-bold'>YOUR <span className='text-primarypink'>ELEVATOR</span> NEEDS.</span></div>
       </Reveal>
       <div className='mt-14 lg:w-full w-[90%] mx-auto'>
         <div className='flex gap-10'>
@@ -54,7 +54,7 @@ const Faq = () => {
           <Reveal>
             <div className='bg-black text-white h-[301px]'>
               <div className='flex flex-col justify-center items-center h-full'>
-                <h2 className='text-[36px] font-bold uppercase'>We represent</h2>
+                <h2 className='lg:text-[36px] sm:text-[28px] text-2xl font-bold uppercase'>We represent</h2>
                 <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Faq = () => {
           <Reveal>
             <div className='bg-primarypink text-white h-[301px]'>
               <div className='flex flex-col justify-center items-center h-full'>
-                <h2 className='text-[36px] font-bold uppercase'>We distribute</h2>
+                <h2 className='lg:text-[36px] sm:text-[28px] text-2xl font-bold uppercase'>We distribute</h2>
                 <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Faq = () => {
           <Reveal>
             <div className='bg-black text-white h-[301px]'>
               <div className='flex flex-col justify-center items-center h-full'>
-                <h2 className='text-[36px] font-bold uppercase'>We’re associated</h2>
+                <h2 className='lg:text-[36px] sm:text-[28px] text-2xl font-bold uppercase'>We’re associated</h2>
                 <p className='text-center px-10 mt-4 text-base'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus.</p>
               </div>
             </div>

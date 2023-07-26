@@ -17,14 +17,14 @@ const AboutUs = () => {
         <div className='w-[90%] mx-auto pt-32'>
             <div className='flex'>
                 <div className='flex-1'>
-                    <Image className='w-full h-full' src={faqImg} />
+                    <Image className='w-full h-full' alt='elevator about image' src={faqImg} />
                 </div>
                 <div className=' bg-primaryyellow w-[606px] lg:py-20 py-10 lg:px-10 px-5'>
                     <Reveal>
                          <p className='text-primarypink lg:text-xl text-base font-semibold uppercase'>ABOUT US</p>
-                    <p className='lg:text-[38px] text-2xl font-semibold lg:mt-10 mt-6'>WE ARE QUALIFIED IN EVERY WORKING DEPARTMENTS</p>
+                    <p className='lg:text-[38px] text-2xl font-semibold lg:mt-10 mt-6 leading-snug'>WE ARE QUALIFIED IN EVERY WORKING DEPARTMENTS</p>
                    </Reveal>
-                    <p className='lg:text-[24px] text-base text-[#6E777D] mt-4 mb-7'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus erat nascetur, a sed placerat sagittis euismod.</p>
+                    <p className='lg:text-[24px] text-base text-[#6E777D] mt-4 mb-7 leading-snug'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus erat nascetur, a sed placerat sagittis euismod.</p>
                     {abouts.map((about, index) => (
                         <div key={index} className='flex gap-2 items-center lg:mt-6 mt-4'>
                         <svg className='w-[14px] h-[14px] lg:w-[21px] lg:h-[21px]' viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
