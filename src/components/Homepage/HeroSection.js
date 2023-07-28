@@ -4,12 +4,20 @@ import hero from '@/public/image/hero.png';
 import Reveal from '../utils/Reveal';
 import PhoneIcon from '@/public/svg/PhoneIcon';
 
+const bannerImgs = [
+    { img: hero },
+    { img: hero },
+    { img: hero }
+];
+
 const HeroSection = () => {
     return (
         <div className='w-full font-tillitium relative h-screen'>
             <div>
                 <div className='w-full h-full z-30 bg-black absolute left-0 opacity-60' />
-                <Image className='w-full absolute z-20 h-full object-fill left-0' src={hero} alt="elevator hero section" />
+                <Reveal>
+                    <Image className='w-full absolute z-20 h-full object-fill left-0' src={hero} alt="elevator hero section" />
+                </Reveal>
             </div>
             <div className='relative text-white z-40 flex flex-col w-[90%] justify-center mx-auto h-full'>
                 <div className='pb-24 lg:py-0'>
