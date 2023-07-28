@@ -18,29 +18,29 @@ const Header = () => {
     return (
         <div>
             {showMenu && <Navbar setShowMenu={setShowMenu} />}
-            <div className='bg-white'>
+            <div className='bg-white text-primaryblack font-tillitium'>
                 <div className='w-[90%] mx-auto md:flex hidden justify-between items-center h-[52px]'>
                     <div className='flex lg:gap-10 gap-6'>
                         <div className='flex items-center gap-1'>
-                            <PhoneIcon fillColor="#FF6600" width="10px" height="10.5px"  />
-                            <span className='text-xs font-bold'>+23470153683</span>
+                            <PhoneIcon fillColor="#FF6600" width="16px" height="14px" />
+                            <span className='text-sm font-semibold'>+23470153683</span>
                         </div>
                         <div className='flex items-center gap-1'>
-                            <EmailIcon fillColor="#FF6600" width="10px" height="10.5px"  />
-                            <span className='text-xs font-bold'>elevator@gmail.com</span>
+                            <EmailIcon fillColor="#FF6600" width="16px" height="16px" />
+                            <span className='text-sm font-semibold'>elevator@gmail.com</span>
                         </div>
                     </div>
                     <div className='flex gap-2 items-center'>
                         <ClockIcon />
-                        <span className='text-xs font-bold'>Mon - Sat 9:00AM - 6:00PM, Sunday - Closed</span>
+                        <span className='text-sm font-semibold'>Mon - Sat 9:00AM - 6:00PM, Sunday - Closed</span>
                     </div>
                 </div>
             </div>
             <div className='bg-black h-[74px] items-center'>
                 <div className='w-[90%] mx-auto text-white flex justify-between items-center h-full'>
-                    <div className='flex items-center gap-28'>
+                    <div className='flex items-center gap-16'>
                         <Logo />
-                        <div className='lg:flex items-center whitespace-nowrap gap-16 hidden'>
+                        <div className='lg:flex items-center font-tillitium whitespace-nowrap text-base gap-16 hidden'>
                             <Link href="/" className='cursor-pointer'>Home</Link>
                             <Link href="/about-us" className='cursor-pointer'>About Us</Link>
                             <Link href="/our-service" className='cursor-pointer'>Our Service</Link>
@@ -48,7 +48,7 @@ const Header = () => {
                             {/* <Link href="/" className='cursor-pointer'>Home</Link> */}
                         </div>
                     </div>
-                    <div onClick={handleClick}>Navbar</div>
+                    <div className='lg:hidden block' onClick={handleClick}>Navbar</div>
                 </div>
             </div>
         </div>

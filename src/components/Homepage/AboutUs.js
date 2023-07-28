@@ -27,7 +27,7 @@ const AboutUs = () => {
     const [currentTab, setCurrentTab] = useState(1);
 
     return (
-        <div className='pt-20'>
+        <div className='pt-24'>
             <div className='flex h-[730px] relative'>
                 <div className='flex-1'>
                     <Image className='w-full h-full object-fill' alt='elevator about image' src={faqImg} />
@@ -37,14 +37,16 @@ const AboutUs = () => {
                     </div>
                     </div>
                 </div>
-                <div className=' bg-white shadow font-tillitium h-auto border-tb pt-10 py-14 px-5 flex-1'>
-                    <p className='text-primarypink text-base font-semibold uppercase ml-14'>Latest Projects</p>
-                    <p className='lg:text-[40px] text-2xl text-primaryblack font-bold mt-4 leading-tight ml-14'>WE ARE QUALIFIED IN <br /> EVERY WORKING <br /> DEPARTMENTS</p>
-                    <div className='bg-primarygray pl-8 text-lg font-tillitium font-semibold gap-10 flex items-center text-primaryblack h-20 ml-14 mr-10 my-6'>
+                <div className=' bg-white font-tillitium h-auto border-tb pt-10 py-14 px-5 flex-1'>
+                    <Reveal><p className='text-primarypink text-base font-semibold uppercase ml-14'>Latest Projects</p></Reveal>
+                    <Reveal><p className='lg:text-[40px] text-2xl text-primaryblack font-bold mt-4 leading-tight ml-14'>WE ARE QUALIFIED IN <br /> EVERY WORKING <br /> DEPARTMENTS</p></Reveal>
+                    <Reveal>
+                        <div className='bg-primarygray pl-8 text-lg font-tillitium font-semibold gap-10 flex items-center text-primaryblack h-20 ml-14 mr-10 my-6'>
                         {tabs.map((tab) => (
                             <div onClick={() => setCurrentTab(tab.tab)} key={tab.tab} className={`cursor-pointer ${tab.tab === currentTab && "border-primaryblack border-b-2"}`}>{tab.name}</div>
                         ))}
-                    </div>
+                        </div>
+                    </Reveal>
                     <Reveal>
                         {tabs[0].tab === currentTab && <Reveal>
                         <p className='text-lg text-[#6E777D] mt-3 ml-14 mr-16'>Laoreet conubia parturient lacinia pulvinar senectus vel posuere proin nec montes dapibus, elementum blandit sem et massa ornare habitasse cursus erat nascetur, a sed placerat sagittis euismod.</p>

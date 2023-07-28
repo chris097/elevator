@@ -7,7 +7,7 @@ import Reveal from '../utils/Reveal';
 
 const RecentWork = () => {
     return (
-        <div className='bg-white overflow-x-hidden'>
+        <div className='overflow-x-hidden'>
             <div className='pt-32'>
                 <Reveal>
                     <div className='flex justify-between items-center w-[90%] mx-auto'>
@@ -34,9 +34,9 @@ const RecentWork = () => {
                 <div className='flex justify-center w-full py-8'>
                     <div className='flex gap-4 items-center mt-2'>
                         <span className='bg-primaryblack w-3 h-3 rounded-full' />
-                        <span className='bg-primarygray w-3 h-3 rounded-full' />
-                        <span className='bg-primarygray w-3 h-3 rounded-full' />
-                        <span className='bg-primarygray w-3 h-3 rounded-full' />
+                        <span className='bg-white w-3 h-3 rounded-full' />
+                        <span className='bg-white w-3 h-3 rounded-full' />
+                        <span className='bg-white w-3 h-3 rounded-full' />
                     </div>
                 </div>
             </div>

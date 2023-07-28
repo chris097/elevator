@@ -15,23 +15,22 @@ const TechnicalTeam = () => {
 
     const fg = []
     return (
-        <div className='bg-white pt-10 pb-32 overflow-x-hidden'>
+        <div className='pt-8 pb-32 overflow-x-hidden'>
             <div className='w-[90%] mx-auto relative'>
                 <Reveal><p className='lg:text-center text-lg font-tillitium text-primarypink font-semibold'>OUR TECHNICAL</p></Reveal>
                 <Reveal><p className='lg:text-center lg:text-[40px] font-tillitium text-primaryblack text-[32px] font-bold pb-14'>OUR TECHNICAL EXPERTS</p></Reveal>
                 {/* <div className='flex lg:justify-between lg:gap-10 gap-6 lg:w-full w-[1200px]'> */}
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
                     {teams.map((team, index) => (
-                        <div className='bg-white shadow p-6 border-[0.5px] w-full  rounded-md border-[#f5f5f5]' key={index}>
+                        <div className='bg-white font-tillitium p-8 w-full border-[#f5f5f5]' key={index}>
                             <Reveal>
                             <div>
-                            <Image className='w-full lg:h-[328.33px] h-[240px]' src={technical1} alt="elevator technical team" />
-                            <div className='flex justify-between pt-6 items-center'>
+                            <Image className='w-full lg:h-[350.33px] h-[240px]' src={technical1} alt="elevator technical team" />
+                            <div className='flex justify-center pt-8 pb-6 items-center'>
                                 <div>
-                                    <p className='text-secondaryblack lg:text-[32px] text-xl font-semibold'>{team.name}</p>
-                                    <p className='lg:text-lg text-sm text-[#6E777D] font-semibold'>{team.role}</p>
+                                    <p className='text-primaryblack font-tillitium text-center text-[30px] font-semibold'>{team.name}</p>
+                                    <p className='lg:text-lg text-sm text-center mt-2'>{team.role}</p>
                                 </div>
-                                <Linkedin />
                             </div>
                         </div>
                         </Reveal>

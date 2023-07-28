@@ -11,6 +11,9 @@ import TechnicalTeam from '@/components/Homepage/TechnicalTeam'
 import Result from '@/components/Homepage/Result'
 import AboutUs from '@/components/Homepage/AboutUs'
 import Footer from '@/components/Footer'
+import Contact from '@/components/Homepage/Contact'
+import Testimonies from '@/components/Homepage/Testimonies'
+import Clients from '@/components/Homepage/Clients'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,10 +28,13 @@ export default function Home() {
       </div>
       <Service />
       <AboutUs />
-      {/* <Faq /> */}
       <RecentWork />
+      <Contact />
       <TechnicalTeam />
       <Result />
+      <Testimonies />
+      <Faq />
+      {/* <Clients /> */}
       <Footer />
     </main>
   )

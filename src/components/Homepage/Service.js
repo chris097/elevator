@@ -13,7 +13,7 @@ const services = [
 
 const Service = () => {
   return (
-      <div className='py-16 mx-auto w-[90%]'>
+      <div className='pb-16 mt-60 mx-auto w-[90%]'>
           <Reveal><p className='text-xl font-tillitium text-primarypink text-center font-semibold'>OUR SERVICES</p></Reveal>
           <Reveal><p className='lg:text-[40px] font-tillitium text-primaryblack text-center sm:text-[38px] text-[32px] font-bold'>QUALITY SERVICING OPPORTUNITY</p></Reveal>
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-3 lg:gap-5 gap-5 mt-14'>
