@@ -40,6 +40,7 @@ const Header = () => {
                 <div className='w-[90%] mx-auto text-white flex justify-between items-center h-full'>
                     <div className='flex items-center gap-16'>
                         <Logo />
+                    </div>
                         <div className='lg:flex items-center font-tillitium whitespace-nowrap text-base gap-16 hidden'>
                             <Link href="/" className='cursor-pointer'>Home</Link>
                             <Link href="/about-us" className='cursor-pointer'>About Us</Link>
@@ -47,7 +48,6 @@ const Header = () => {
                             <Link href="/contact-us" className='cursor-pointer'>Contact US</Link>
                             {/* <Link href="/" className='cursor-pointer'>Home</Link> */}
                         </div>
-                    </div>
                     <div className='lg:hidden block' onClick={handleClick}>Navbar</div>
                 </div>
             </div>
