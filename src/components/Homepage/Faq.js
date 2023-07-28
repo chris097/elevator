@@ -30,7 +30,7 @@ const Faq = () => {
         <div className='flex gap-10'>
           <div className='w-full'>
             {faqs.map((faq, index) => (
-              <Reveal>
+              <Reveal key={index}>
                 <React.Fragment key={index}>
                 <div onClick={() => {
                   setShowFaq(!showFaq)
