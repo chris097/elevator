@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import hero from '@/public/image/hero.png';
+import frame2 from '@/public/image/frame2.jpeg';
+import frame1 from '@/public/image/frame1.jpeg';
+import frame3 from '@/public/image/frame3.jpeg';
 import Reveal from '../utils/Reveal';
 import PhoneIcon from '@/public/svg/PhoneIcon';
 
@@ -20,7 +22,7 @@ const HeroSection = () => {
     
      useEffect(() => {
     // Automatically change slide every 3 seconds
-    const slideInterval = setInterval(nextSlide, 4000);
+    const slideInterval = setInterval(nextSlide, 6000);
 
     // Clear interval when the component is unmounted
     return () => clearInterval(slideInterval);
@@ -30,8 +32,8 @@ const HeroSection = () => {
     return (
         <div className='w-full font-tillitium relative h-screen'>
             {tabs[0].tab === activeIndex && <> <div>
-                <div className='overlay z-30 opacity-50' />
-                <Image className="w-full absolute z-20 h-screen object-fill left-0" src={hero} alt="elevator hero section" />
+                <div className='overlay z-30 opacity-80' />
+                <Image className="w-full absolute z-20 h-screen object-cover left-0" src={frame2} alt="elevator hero section" />
             </div>
                 <div className='relative text-white z-40 flex flex-col w-[90%] justify-center mx-auto h-full'>
                     <div className='pb-24 lg:py-0'>
@@ -54,8 +56,8 @@ const HeroSection = () => {
                     </Reveal>
                 </div> </>}
             {tabs[1].tab === activeIndex && <> <div>
-                <div className='overlay z-30 opacity-50' />
-                <Image className='w-full absolute z-20 h-screen object-fill left-0' src={hero} alt="elevator hero section" />
+                <div className='overlay z-30 opacity-80' />
+                <Image className='w-full absolute z-20 h-screen object-cover left-0' src={frame1} alt="elevator hero section" />
             </div>
                 <div className='relative text-white z-40 flex flex-col w-[90%] justify-center mx-auto h-full'>
                     <div className='pb-24 lg:py-0'>
@@ -78,8 +80,8 @@ const HeroSection = () => {
                     </Reveal>
                 </div> </>}
             {tabs[2].tab === activeIndex && <> <div>
-                <div className='overlay z-30 opacity-50' />
-                <Image className='w-full absolute z-20 h-screen object-fill left-0' src={hero} alt="elevator hero section" />
+                <div className='overlay z-30 opacity-80' />
+                <Image className='w-full absolute z-20 h-screen object-cover left-0' src={frame3} alt="elevator hero section" />
             </div>
                 <div className='relative text-white z-40 flex flex-col w-[90%] justify-center mx-auto h-full'>
                     <div className='pb-24 lg:py-0'>
