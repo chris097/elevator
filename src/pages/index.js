@@ -1,7 +1,7 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
-// import HeroSection from '@/components/Homepage/HeroSection'
+import HeroSection from '@/components/Homepage/HeroSection'
 import Faq from '@/components/Homepage/Faq'
 import Service from '@/components/Homepage/Service'
 import RecentWork from '@/components/Homepage/RecentWork'
@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {/* <div className='relative lg:h-[716px] h-auto'>
+      <div className='relative lg:h-[716px] h-auto'>
         <HeroSection />
-      </div> */}
+      </div>
       <Service />
       <AboutUs />
       <RecentWork />
