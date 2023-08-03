@@ -19,9 +19,10 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className='relative lg:h-[716px] h-auto'>
+       <div className='relative lg:h-[716px] h-auto'>
         <HeroSection />
       </div>
+      {/*
       <Service />
       <AboutUs />
       <RecentWork />
@@ -29,9 +30,9 @@ export default function Home() {
       <TechnicalTeam />
       <Result />
       <Testimonies />
-      <Faq />
+      <Faq /> */}
       {/* <Clients /> */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   )
 }
